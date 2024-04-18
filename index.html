@@ -21,33 +21,44 @@
       font-size: 20px
       font-family="sans-serif"
     }
+    .zoomspec {
+                transition: transform 0.3s; /* Animation */
+                margin: 0 auto;
+                border-radius: 25px;
+            }
+            .zoomspec:hover {
+                transform: scale(
+                    1.2
+                ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
     </style>
   </head>
   <body>
     <div id="home">
       <h1>SS Database</h1>
-        <a href="#series-1"><img src="images/series-1.png" alt="SERIES 1" height="300px" width="300px"></a>
-        <a href="#series-2"><img src="images/series-2.png" alt="SERIES 2" height="300px" width="300px"></a>
+        <a href="#series-1"><img src="images/series-1.png" class="zoomspec" alt="SERIES 1" height="300px" width="300px"></a>
+        <a href="#series-2"><img src="images/series-2.png" class="zoomspec" alt="SERIES 2" height="300px" width="300px"></a>
     </div>
     <div id="series-1"><!--SickleSerialNumbers 1-5-->
-        <p class="serialnumheads">SSN1</p>
-        <p class="serialnumheads">SSN2</p>
-        <p class="serialnumheads">SSN3</p>
-        <p class="serialnumheads">SSN4</p>
-        <p class="serialnumheads">SSN5</p>
-
+        <p class="serialnumheads">SSN1 ~~~~ strawberry lemonade + ~ lemonade</p>
+        <p class="serialnumheads">SSN2 strawberry lemonade</p>
+        <p class="serialnumheads">SSN3 ~~ strawberry lemonade + ~~ lemonade</p>
+        <p class="serialnumheads">SSN4 lemonade</p>
+        <p class="serialnumheads">SSN5 lemonade</p>
+        <a href="#home"><img class="zoomspec" src="backbutton.png"></a>
     </div>
     <div id="series-2"><!--SickleSerialNumbers 6-15-->
-      <p class="serialnumheads">SSN6</p>
-      <p class="serialnumheads">SSN7</p>
-      <p class="serialnumheads">SSN8</p>
-      <p class="serialnumheads">SSN9</p>
-      <p class="serialnumheads">SSN10</p>
-      <p class="serialnumheads">SSN11</p>
-      <p class="serialnumheads">SSN12</p>
-      <p class="serialnumheads">SSN13</p>
-      <p class="serialnumheads">SSN14</p>
-      <p class="serialnumheads">SSN15</p>
+      <p class="serialnumheads">SSN6 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN7 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN8 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN9 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN10 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN11 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN12 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN13 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN14 greek yogurt + chopped oranges</p>
+      <p class="serialnumheads">SSN15 greek yogurt + chopped oranges</p>
+      <a href="#home"><img class="zoomspec" src="backbutton.png"></a>
   </div>
     
   </body>
